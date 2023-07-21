@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Password</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Cedarville+Cursive&family=Cuprum&family=Karla&family=Mali&family=Raleway&family=Syncopate&display=swap" rel="stylesheet">
+	<style type="text/css">
+	h1{
+			color:#002D67;
+			text-align: center;
+			padding: 15px;
+			font-family: 'Cedarville Cursive', cursive;
+		}
+
+		h2{
+			color:#35012c;
+			font-family: 'Karla', sans-serif;
+
+
+		}
+
+		p{
+			font-family: 'Syncopate', sans-serif;
+			color: #7a007a;
+		}
+</style>
+<script type="text/javascript">
+		
+		function checkpassword() {
+			var password = document.getElementById("passwordbox");
+			var passwordText= password.value;
+			if (passwordText == "BootesVoid") {
+				return true;
+			}
+			else{
+				alert("Access Denied")
+				return false;
+			}
+		}
+
+
+	</script>
+</head>
+<body>
+
+	<p style="text-align:center;">Welcome!</p>
+	<p>In order to access this website, please enter the password. <br>If you don't have it, please don't try to access this.</p>
+	<p> Password: <input id="passwordbox" type="password"></p>
+	<a href="mishapage1.html" onclick="return checkpassword()">Click here to eneter the website!</a>
+
+</body>
+</html>
